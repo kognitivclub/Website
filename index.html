@@ -4,7 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Projects</title>
+    <title>Kognitiv</title>
+    <meta property="og:image" content="assets/img/logo.jpg">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
@@ -32,7 +34,7 @@
 <link rel="shortcut icon" type="image/png" href="logo.jpg">
 </head>
 
-<body class="flex-fill">
+<body>
     <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
         <div class="container"><a class="navbar-brand" href="index.html"></a><a href="index.html"><img src="assets/img/logo.jpg" width="80px" height="40px" /></a><a class="navbar-brand swing animated infinite" href="index.html">Kognitiv</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon" data-bs-hover-animate="bounce"></span></button>
             <div
@@ -47,51 +49,33 @@
                 </ul><span class="invisible navbar-text actions"> <a class="login" href="Login.html">Log In</a><a class="btn btn-light action-button" role="button" href="SignUp.html">Sign Up</a></span></div>
         </div>
     </nav>
-    <div class="team-boxed">
-        <div class="container">
-            <div class="invisible intro">
-                <h1>Heading</h1>
+    <div class="d-flex d-sm-flex justify-content-sm-center align-items-sm-end highlight-blue" data-aos="fade" style="height: 100px;">
+        <h3 class="text-center toplace" data-bs-hover-animate="pulse">Learn The Way You Train</h3>
+    </div>
+    <div data-aos="slide-right" data-aos-once="true" class="simple-slider">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=443);"><img class="img-fluid flex-fill" src="assets/img/pic.jpg" width="2000px" height="800px"></div>
+                <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"><img class="img-fluid" src="assets/img/sameer2.jpg" width="2000px" height="800px"></div>
+                <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"><img class="img-fluid" src="assets/img/vamsi2.jpg" width="2000px" height="800px"></div>
             </div>
+            <div class="bounce animated infinite swiper-button-prev"></div>
+            <div class="float-right bounce animated infinite swiper-button-next" style="filter: blur(0px);"></div>
         </div>
+    </div>
+    <div class="container new">
+        <h1 data-aos="fade">What we do !</h1>
     </div>
     <div>
         <div class="container">
             <div class="row">
-                <div class="col-md-6 text-left m-auto"><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/GWpicozVyys?loop=1&amp;playlist=GWpicozVyys" class="newone" width="460" height="315"></iframe></div>
-                <div class="col-md-6 middle" align="center">
-                    <p class="lead border rounded border-danger" data-aos="fade">Identity Recognition</p>
-                    <p class="text-justify" data-aos="fade">Identity Recognition has a vast range of applications in the current industry where it can be used for preventing outsiders to enter into their organization. In this Identity Recognition project we have trained the deep neural model
-                        by giving so many images of the people (20 samples per person) and then we have taken feed from the web cam to predict the identities of person present in each frame.by this project you can easily&nbsp;detect different people with
-                        their identities.</p>
+                <div class="col-md-6 flex-fill"><img class="img-fluid" data-aos="fade" src="assets/img/lokesh3.png" width="600px" height="500px"></div>
+                <div class="col-md-6 flex-fill">
+                    <p class="border rounded-0">"To make computers to see, hear, and learn. Let us welcome the future computing.”</p>
+                    <p class="text-justify">Machine Learning is the trend of the day, and it is anywhere and everywhere. Machine Learning is the study of algorithms that allow computers to predict or classify and improve the performances through experience&nbsp;automatically.
+                        Iterative training of the machine learning models helps the computers to independently adapt to the new data. The club also focuses on product development, funded projects from industry, startups, etc. Moreover, we are also implementing
+                        a club box through which all the club members would be able to share their ideas. The club intends to learn with fun and without stress.</p>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="team-boxed">
-        <div class="container">
-            <div class="invisible intro">
-                <h1>Heading</h1>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-left m-auto"><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/2HOPcBFvzc4?loop=1&amp;playlist=2HOPcBFvzc4" class="newone" width="460" height="315"></iframe></div>
-                <div class="col-md-6 middle" align="center">
-                    <p class="lead border rounded border-danger" data-aos="fade">Smile Detection</p>
-                    <p class="text-justify" data-aos="fade">Emotion detectors are used in many industries, one being the media industry where it is important for the companies to determine the public reaction to their products. In this mini project we are going to build a smile detector using
-                        OpenCV which takes in live feed from webcam and dectect the smile which we can call as a happiness detctor. We are going to achieve this by harcascade xml files. Haar-cascades are classifiers that are used to detect features (of
-                        face in this case) by superimposing predefined patterns over face segments and are used as XML files. In our model, we shall use face, eye and smile haar-cascades, which after downloading need to be placed in the working directory.
-                        with these xml we can easily detect the smile, eyes, face etc by their neighbours.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="team-boxed">
-        <div class="container">
-            <div class="invisible intro">
-                <h1>Heading</h1>
             </div>
         </div>
     </div>
