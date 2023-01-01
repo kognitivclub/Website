@@ -1,0 +1,18 @@
+.alumnis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.team-card{
+    border-radius: 5%;
+    cursor: pointer;
+    transition: 0.3s !important;
+    padding-bottom: 5%;
+}
+
+.people{
+    display: flex;
+    justify-content: center;
+}
