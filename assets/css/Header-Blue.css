@@ -222,3 +222,23 @@
   opacity: 0.2;
 }
 
+ /* Target the scrollbar */
+ ::-webkit-scrollbar {
+  width: 7px; /* Set the width of the scrollbar to 7px */
+}
+
+/* Track (the area on which the thumb travels) */
+::-webkit-scrollbar-track {
+  background: rgba(3, 144, 214, 0.1); /* Set the RGB color with transparency for the track */
+}
+
+/* Handle (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+  background: rgba(3, 144, 214, 0.3); /* Set the RGB color with transparency for the handle */
+  border-radius: 6px; /* Set the border radius to make it rounder */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(3, 144, 214, 0.5); /* Set the RGB color with transparency for the handle on hover */
+}
