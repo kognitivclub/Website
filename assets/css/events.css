@@ -1,0 +1,130 @@
+.back-arrow{
+    position: fixed;
+    top: 4rem;
+    left: 3rem;
+    cursor: pointer;
+    font-size: 34px;
+    color: var(--color-success);
+    padding: 10px;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.back-arrow i{
+    margin-top: 1px;
+}
+
+.events{
+    margin-top: 1rem;
+}
+
+.tnts{
+    margin-top: 1rem;
+}
+
+.events__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.tnts__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.event{
+    background: var(--color-bg3);
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    border-radius: 1rem;
+    padding: 1rem;
+    border: #808080;
+}
+
+.tnt{
+    /* background: var(--color-bg3); */
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    border-radius: 1rem;
+    padding: 1rem;
+    /* border: #808080; */
+}
+
+.event:hover{
+    background: transparent;
+    border-color: var(--color-success);
+}
+
+.tnt:hover{
+    background: transparent;
+    border-color: var(--color-blue-variant);
+}
+
+.event__Image img{
+    border-radius: 1rem;
+}
+
+.tnt__Image img{
+    border-radius: 1rem;
+}
+
+.event__info{
+    padding: 2rem;
+}
+
+.tnt__info{
+    padding: 2rem;
+}
+
+.event__info p{
+    margin: 1.2rem 0 2rem;
+    font-size: 0.9rem;
+    color: var(--color-light);
+}
+
+.tnt__info p{
+    margin: 1.2rem 0 2rem;
+    font-size: 0.9rem;
+    color: var(--color-light);
+}
+
+@media screen and (max-width: 1024px){
+    /* OUR EVENTS */
+    .events{
+        margin-top: 0;
+    }
+
+    .tnts{
+        margin-top: 0;
+    }
+
+    .events__container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .tnts__container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* EVENTS */
+    .events__container{
+        grid-template-columns: 1fr;
+    }
+
+    .tnts__container{
+        grid-template-columns: 1fr;
+    }
+
+    .back-arrow{
+        left: 1rem;
+    }
+}

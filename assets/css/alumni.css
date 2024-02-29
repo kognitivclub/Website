@@ -1,0 +1,78 @@
+.back-arrow{
+    position: fixed;
+    top: 4rem;
+    left: 3rem;
+    cursor: pointer;
+    font-size: 34px;
+    color: var(--color-success);
+    padding: 10px;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.back-arrow i{
+    margin-top: 1px;
+}
+
+.alumnis{
+    margin-top: 1rem;
+}
+
+.alumnis__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.alumni{
+    background: var(--color-bg3);
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    border-radius: 1rem;
+    padding: 1rem;
+    border: #808080;
+}
+
+.alumni:hover{
+    background: transparent;
+    border-color: var(--color-success);
+}
+
+.alumni__Image img{
+    border-radius: 1rem;
+}
+
+.alumni__info{
+    padding: 2rem;
+}
+
+.alumni__info p{
+    margin: 1.2rem 0 2rem;
+    font-size: 0.9rem;
+    color: var(--color-light);
+}
+
+@media screen and (max-width: 1024px){
+    /* OUR BLOGS */
+    .alumnis{
+        margin-top: 0;
+    }
+
+    .alumnis__container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* BLOGS */
+    .alumnis__container{
+        grid-template-columns: 1fr;
+    }
+
+    .back-arrow{
+        left: 1rem;
+    }
+}

@@ -1,162 +1,672 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./assets/images/logo-updated.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ICONSCOUT CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- SWIPER JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- <script src="https://unicons.iconscout.com/release/v4.0.8/script/monochrome/bundle.js"/>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/solid.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/thinline.css"> -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/slider.css">
+    <style>
+        body {
+            background-image: url(./assets/images/bg-texture.png);
+        }
+    </style>
     <title>Kognitiv Club</title>
-
-    <meta property="og:image" content="assets/img/logo.jpg">
-    <meta property="og:type" content="website">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="assets/css/Article-Clean.css">
-    <link rel="stylesheet" href="assets/css/Article-List.css">
-    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
-    <link rel="stylesheet" href="assets/css/Features-Blue.css">
-    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
-    <link rel="stylesheet" href="assets/css/Footer-Clean.css">
-    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
-    <link rel="stylesheet" href="assets/css/Header-Blue.css">
-    <link rel="stylesheet" href="assets/css/Highlight-Blue.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
-    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
-    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
-    <link rel="stylesheet" href="assets/css/Projects-Horizontal.css">
-    <link rel="stylesheet" href="assets/css/Simple-Slider.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/Team-Boxed.css">
-    <link rel="stylesheet" href="assets/css/Team-Clean.css">
-<link rel="shortcut icon" type="image/png" href="assets/img/logo-updated.jpg">
-<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-
 </head>
 
 <body>
-    
-    <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/63c150df47425128790d3f4d/1gmli7qis';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-    </script>
-    <!--End of Tawk.to Script-->
-    <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
-        <div class="container"><a class="navbar-brand" href="index.html"></a><a href="index.html"><img src="assets/img/kognitiv-logo.png" width="80px" height="40px" /></a><a class="navbar-brand swing animated infinite" href="index.html">Kognitiv</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon" data-bs-hover-animate="bounce"></span></button>
-            <div
-                class="collapse navbar-collapse" id="navcol-1">
-                <ul class="nav navbar-nav mr-auto">
-                    <li class="nav-item" role="presentation"></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="Team.html">Team</a></li>
-                    
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="alumni.html">Alumni</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="About.html">Events</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="Blog.html">Blogs</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="Projects.html">Projects</a></li>
-                    <li class="nav-item" role="presentation"></li>
-                </ul><span class="invisible navbar-text actions"> <a class="login" href="Login.html">Log In</a><a class="btn btn-light action-button" role="button" href="SignUp.html">Sign Up</a></span></div>
+    <!-- NAV -->
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html">
+                <h4>KOGNITIV CLUB</h4>
+            </a>
+            <ul class="nav__menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="befprojects.html">Projects</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="alumni.html">Alumni</a></li>
+                <li><a href="befcontact.html">Contact Us</a></li>
+                <!-- <li><a href="signin.html">Sign In</a></li> -->
+            </ul>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
         </div>
     </nav>
-    <div class="d-flex d-sm-flex justify-content-sm-center align-items-sm-end highlight-blue" data-aos="fade" style="height: 60px;">
-        <h4 class="text-center toplace" data-bs-hover-animate="pulse">Learn The Way You Train</h4>
-    </div>
-    <div data-aos="slide-right" data-aos-once="true" class="simple-slider">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image: url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=443);"><img class="img-fluid flex-fill" src="assets/img/RecentImages/ama.jpeg" width="2000px" height="800px"></div>
-                <div class="swiper-slide" style="background-image: url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=443);"><img class="img-fluid" src="assets/img/RecentImages/ama-balaji.jpeg" width="2000px" height="800px"></div>
-                <div class="swiper-slide" style="background-image: url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=443);"><img class="img-fluid" src="assets/img/RecentImages/ama-pavan.jpeg" width="2000px" height="800px"></div>
-                <div class="swiper-slide" style="background-image: url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=443);"><img class="img-fluid" src="assets/img/RecentImages/IMG_1460.JPG" width="2000px" height="800px"></div>
-                <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"><img class="img-fluid" src="assets/img/RecentImages/IMG_1402.JPG" width="2000px" height="800px"></div>
-                <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"><img class="img-fluid" src="assets/img/RecentImages/IMG_0879.JPG" width="2000px" height="800px"></div>
-                <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"><img class="img-fluid" src="assets/img/RecentImages/class_1.jpg" width="2000px" height="800px"></div>
-                <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"><img class="img-fluid" src="assets/img/RecentImages/IMG_0867.JPG" width="2000px" height="800px"></div>
-                <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"><img class="img-fluid" src="assets/img/RecentImages/IMG_0952.JPG" width="2000px" height="800px"></div>
-                <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"><img class="img-fluid" src="assets/img/RecentImages/class_2.jpeg" width="2000px" height="800px"></div>
-                <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"><img class="img-fluid" src="assets/img/RecentImages/class_3.jpeg" width="2000px" height="800px"></div>
-                <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"><img class="img-fluid" src="assets/img/RecentImages/IMG_0959.JPG" width="2000px" height="800px"></div>
-                
-            </div>
-            <div class="bounce animated infinite swiper-button-prev"></div>
-            <div class="float-right bounce animated infinite swiper-button-next" style="filter: blur(0px);"></div>
-        </div>
-    </div>
-    <div class="container new">
-        <h1 data-aos="fade">What we do !</h1>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 flex-fill"><img class="img-fluid" data-aos="fade" src="assets/img/RecentImages/teampic_y21.jpeg" width="600px" height="500px"></div>
-            <div class="col-md-6 flex-fill">
-                <p class="">"To make computers to see, hear, and learn. Let us welcome the future computing.”</p>
-                <p class="text-justify">Machine Learning is the trend of the day, and it is anywhere and everywhere. Machine Learning is the study of algorithms that allow computers to predict or classify and improve the performances through experience&nbsp;automatically.
-                    Iterative training of the machine learning models helps the computers to independently adapt to the new data. The club also focuses on product development, funded projects from industry, startups, etc. Moreover, we are also implementing
-                    a club box through which all the club members would be able to share their ideas. The club intends to learn with fun and without stress.</p>
-            </div>
-        </div>
-        <div class="row" style="margin-top: 2%;">
-            <div class="col-md-6 flex-fill">
-                <p class=""><b>Vision:</b> "To bring support to the mankind using intelligence based technologies AI and DS”</p>
-                <p class="text-justify"><b>Mission:</b><br>
-                    1.	Building a community of AI and DS Enthusiasts <br>
-                    2.	Working on real time projects<br>
-                    3.	Expertise in Machine Learning, Deep Learning<br>
-                    4.	Mastering tools and frameworks like Tensorflow, Keras, Power BI, Tableau<br>
-                    5.	Participating in Global Challenges like Kaggle<br>
-                    6.	Encourage Alumni Relations to promote cultural, academic, and literary advancement.      <br>                  
-                </p>
-            </div>
-            <div class="col-md-6 flex-fill">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/nSj29ny4AZM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <!-- END OF NAV -->
 
-        </div>
-    </div>
-    <div class="footer-basic">
-        <footer></footer>
-    </div>
-    <div data-aos="fade" class="footer-dark">
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>Services</h3><a href="About.html" style="color: rgb(3, 144, 214); text-decoration: none;">Events</a><br><a href="Blog.html" style="color: rgb(3, 144, 214); text-decoration: none;">Blogs</a><br><a href="Projects.html" style="color: rgb(3, 144, 214); text-decoration: none;">Projects</a></div>
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>Contact Us</h3>
-                        <p>kognitiv.techclub@kluniversity.in</p><a href="Team.html" style="color: rgb(3, 144, 214); text-decoration: none;">Our Crew</a><br>
-                    <a href="alumni.html" style="color: rgb(3, 144, 214); text-decoration: none;">Our Alumni</a></div>
-                    <div class="col-md-6 item text">
-                        <h3>Kognitiv</h3>
-                        <p>"To make computers to see, hear, and learn. Let us welcome the future computing.”<br><br></p>
-                    </div>
-                    <div class="col item social"><a href="https://www.facebook.com/kognitiv.club" target="_blank"><i class="icon ion-social-facebook"></i></a><a href="https://twitter.com/kognitivclub" target="_blank"><i class="icon ion-social-twitter"></i></a><a href="https://www.linkedin.com/company/kognitiv-club/"
-                            target="_blank"><i class="icon ion-social-linkedin"></i></a><a href="https://www.instagram.com/kognitiv_club/" target="_blank"><i class="icon ion-social-instagram"></i></a><a href="https://www.youtube.com/channel/UCYbMRONlhT1RCgswkbuGGzg" target="_blank"><i class='icon ion-social-youtube'></i>
-</a><a href="https://discord.gg/PFQgJ4e9" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
-  <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/>
-</svg>
-</a>
-</div>
+    <header>
+        <div class="container header__container">
+            <div class="header__left">
+                <h1>Kognitiv</h1>
+                <h1>Technology Club</h1>
+                <p>Learn the way you train</p>
+                <p>Predicting the future isn't Magic, it's Artificial Intelligence...!</p>
+                <a href="#section1" class="btn"
+                    style="background-color: var(--color-success); border-radius: 70px; color: var(--color-primary); border: none;">Get
+                    Started</a>
+            </div>
+
+            <div class="header__right">
+                <div class="header__right-image">
+                    <img src="./assets/images/kognitiv-logo_whitepng.png">
                 </div>
             </div>
-        </footer>
-    </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
-    <script src="assets/js/Simple-Slider.js"></script>
-    
+        </div>
+    </header>
+    <!-- END OF HEADER -->
+
+    <!--Image Slider-->
+
+    <section class="slider" id="section1">
+        <div class="cd-slider-wrapper">
+            <ul class="cd-slider" data-step1="M1402,800h-2V525V0h1c0.6,0,1,0.4,1,1V800z"
+                data-step2="M1400,800H739L427,523L760,0h639c0.6,0,1,0.4,1,1V800z"
+                data-step3="M1400,800H0V521V0h1399c0.6,0,1,0.4,1,1V800z"
+                data-step4="M-2,800h2V525V0h-1c-0.6,0-1,0.4-1,1V800z"
+                data-step5="M0,800h661l312-277L640,0L1,0C0.4,0,0,0.4,0,1L0,800z"
+                data-step6="M0,800h1400V521V0L1,0C0.4,0,0,0.4,0,1L0,800z">
+                <li class="visible">
+                    <div class="cd-svg-wrapper">
+                        <svg viewBox="0 0 1400 800">
+                            <defs>
+                                <clipPath id="cd-image-1">
+                                    <path id="cd-changing-path-1" d="M1400,800H0V521V0h1399c0.6,0,1,0.4,1,1V800z" />
+                                </clipPath>
+                            </defs>
+
+                            <image height='800px' width="1400px" clip-path="url(#cd-image-1)"
+                                xlink:href="./assets/images/slider/img-1.jpeg"></image>
+                        </svg>
+                    </div> <!-- .cd-svg-wrapper -->
+                </li>
+
+                <li>
+                    <div class="cd-svg-wrapper">
+                        <svg viewBox="0 0 1400 800">
+                            <defs>
+                                <clipPath id="cd-image-2">
+                                    <path id="cd-changing-path-2" d="M1400,800H0V521V0h1399c0.6,0,1,0.4,1,1V800z" />
+                                </clipPath>
+                            </defs>
+
+                            <image height='800px' width="1400px" clip-path="url(#cd-image-2)"
+                                xlink:href="./assets/images/slider/img-2.jpg"></image>
+                        </svg>
+                    </div> <!-- .cd-svg-wrapper -->
+                </li>
+
+                <li>
+                    <div class="cd-svg-wrapper">
+                        <svg viewBox="0 0 1400 800">
+                            <defs>
+                                <clipPath id="cd-image-3">
+                                    <path id="cd-changing-path-3" d="M1400,800H0V521V0h1399c0.6,0,1,0.4,1,1V800z" />
+                                </clipPath>
+                            </defs>
+
+                            <image height='800px' width="1400px" clip-path="url(#cd-image-3)"
+                                xlink:href="./assets/images/slider/img-3.jpg"></image>
+                        </svg>
+                    </div> <!-- .cd-svg-wrapper -->
+                </li>
+
+                <li>
+                    <div class="cd-svg-wrapper">
+                        <svg viewBox="0 0 1400 800">
+                            <defs>
+                                <clipPath id="cd-image-4">
+                                    <path id="cd-changing-path-4" d="M1400,800H0V521V0h1399c0.6,0,1,0.4,1,1V800z" />
+                                </clipPath>
+                            </defs>
+
+                            <image height='800px' width="1400px" clip-path="url(#cd-image-4)"
+                                xlink:href="./assets/images/slider/img-4.jpg"></image>
+                        </svg>
+                    </div> <!-- .cd-svg-wrapper -->
+                </li>
+                <li>
+                    <div class="cd-svg-wrapper">
+                        <svg viewBox="0 0 1400 800">
+                            <defs>
+                                <clipPath id="cd-image-5">
+                                    <path id="cd-changing-path-5" d="M1400,800H0V521V0h1399c0.6,0,1,0.4,1,1V800z" />
+                                </clipPath>
+                            </defs>
+
+                            <image height='800px' width="1400px" clip-path="url(#cd-image-5)"
+                                xlink:href="./assets/images/slider/img-5.jpeg"></image>
+                        </svg>
+                    </div> <!-- .cd-svg-wrapper -->
+                </li>
+                <li>
+                    <div class="cd-svg-wrapper">
+                        <svg viewBox="0 0 1400 800">
+                            <defs>
+                                <clipPath id="cd-image-6">
+                                    <path id="cd-changing-path-6" d="M1400,800H0V521V0h1399c0.6,0,1,0.4,1,1V800z" />
+                                </clipPath>
+                            </defs>
+
+                            <image height='800px' width="1400px" clip-path="url(#cd-image-6)"
+                                xlink:href="./assets/images/slider/img-6.jpeg"></image>
+                        </svg>
+                    </div> <!-- .cd-svg-wrapper -->
+                </li>
+
+            </ul> <!-- .cd-slider -->
+
+            <ul class="cd-slider-navigation">
+                <li><a href="#0" class="next-slide">Next</a></li>
+                <li><a href="#0" class="prev-slide">Prev</a></li>
+            </ul> <!-- .cd-slider-navigation -->
+
+            <ol class="cd-slider-controls">
+                <li class="selected"><a href="#0"><em>Item 1</em></a></li>
+                <li><a href="#0"><em>Item 2</em></a></li>
+                <li><a href="#0"><em>Item 3</em></a></li>
+                <li><a href="#0"><em>Item 4</em></a></li>
+                <li><a href="#0"><em>Item 5</em></a></li>
+                <li><a href="#0"><em>Item 6</em></a></li>
+            </ol> <!-- .cd-slider-controls -->
+        </div> <!-- .cd-slider-wrapper -->
+    </section>
+
+    <!--End of Image Slider-->
+
+    <section class="telegram">
+        <div class="container telegram__container">
+            <div class="telegram__left">
+                <article class="socials__buttons">
+                    <a href="https://t.me/joinchat/1sxfSbNM1adhMzNl" class="btn"
+                        style="border-radius: 70px; font-size: 1.2rem;" target="_blank">Join us on <i
+                            class="uil uil-telegram" style="font-size: 1.2rem;"></i></a>
+                    <p>Join us on telegram</p>
+                </article>
+                <article class="socials__buttons">
+                    <a href="https://www.instagram.com/kognitiv_club/" class="btn"
+                        style="border-radius: 70px; font-size: 1.2rem; background: #d20e43;" target="_blank">Follow us
+                        on <i class="uil uil-instagram" style="font-size: 1.2rem;"></i></a>
+                    <p>Follow us on Instagram</p>
+                </article>
+                <article class="socials__buttons">
+                    <a href="https://www.linkedin.com/company/kognitiv-club/mycompany/" class="btn"
+                        style="border-radius: 70px; font-size: 1.2rem; background: #0A66C2;" target="_blank">Connect us
+                        on <i class="uil uil-linkedin" style="font-size: 1.2rem;"></i></a>
+                    <p>Connect us on LinkedIn</p>
+                </article>
+            </div>
+            <div class="telegram__right">
+                <img src="./assets/images/kognitiv-logo_whitepng.png">
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="categories">
+        <div class="container categories__container">
+            <div class="categories__left">
+                <h1>Our Wings</h1>
+                <p style="color: var(--color-success);">To make computers to see, hear, and learn. Let us welcome the future computing.</p>
+                   <a href="#" class="btn" style="border-radius: 50px;">Learn More</a>
+            </div>
+            <div class="categories__right">
+                <article class="category">
+                    <span class="category__icon"><i class="uil uil-robot"></i></span>
+                    <h5>Machine Learning</h5>
+                    <p>Machine learning involves algorithms and models enabling
+                        computers to learn from data, make predictions, and improve
+                        performance without explicit programming.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon"><i class="uil uil-eye"></i></span>
+                    <h5>Computer Vision</h5>
+                    <p>Computer vision merges artificial intelligence and image processing,
+                        empowering machines to interpret visual data, recognize patterns, and
+                        make informed decisions.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon"><i class="uil uil-database"></i></span>
+                    <h5>Big Data</h5>
+                    <p>Big data refers to vast sets of information that demand sophisticated
+                        processing tools, revealing insights, patterns, and trends for decision-making.</p>
+                </article>
+            </div>
+        </div>
+    </section> -->
+    <!-- END OF CATEGORIES -->
+
+    <!-- ABOUT US -->
+    <!-- <section class="aboutus">
+        <div class="container aboutus__container">
+            <div class="aboutus__left">
+                <p style="color: var(--color-success);">About Us</p>
+                <h1 style="font-weight: 500;">Artificial Intelligence is the new future.</h1>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, atque.</P>
+                <a href="#" class="btn" style="background-color: var(--color-success); border-radius: 70px; color: white; border: none;">Explore</a>
+            </div>
+
+            <div class="aboutus__right">
+                <div class="aboutus__right-img">
+                    <img src="./assets/images/aventing2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- END OF ABOUTUS -->
+
+    <!-- OURWINGS -->
+    <section class="ourwings">
+        <div class="container ourwings__container">
+            <div class="ourwings__left">
+                <p style="color: var(--color-success);">What we do</p>
+                <h1 style="font-weight: 500;">Artificial Intelligence will help everyone succeed.</h1>
+            </div>
+
+            <div class="ourwings__right">
+                <article class="ourwing">
+                    <span class="ourwing__icon"><i class="uil uil-layer-group"></i></span>
+                    <h5>Machine Learning</h5>
+                    <p>Data-driven algorithms automate tasks, improving performance through iterative learning processes
+                    </p>
+                </article>
+
+                <article class="ourwing">
+                    <span class="ourwing__icon"><i class="uil uil-layer-group"></i></span>
+                    <h5>Computer Vision</h5>
+                    <p>Machines interpret visual data for recognition, analysis, and decision-making tasks</p>
+                </article>
+
+                <article class="ourwing">
+                    <span class="ourwing__icon"><i class="uil uil-layer-group"></i></span>
+                    <h5>NLP</h5>
+                    <p>Computers process and understand human language for diverse applications</p>
+                </article>
+
+                <article class="ourwing">
+                    <span class="ourwing__icon"><i class="uil uil-layer-group"></i></span>
+                    <h5>Tensorflow</h5>
+                    <p>TensorFlow: Open-source machine learning framework for building and deploying models</p>
+                </article>
+
+                <article class="ourwing">
+                    <span class="ourwing__icon"><i class="uil uil-layer-group"></i></span>
+                    <h5>Big Data</h5>
+                    <p>Big data: Massive datasets analyzed for insights, trends, and decision-making</p>
+                </article>
+
+                <article class="ourwing">
+                    <span class="ourwing__icon"><i class="uil uil-layer-group"></i></span>
+                    <h5>Deep Learning</h5>
+                    <p>Deep learning: Neural networks simulate human brain for complex tasks</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- END OF OURWINGS -->
+
+    <!-- BLOGS -->
+    <section class="blogs">
+        <h2>Our Blogs</h2>
+        <div class="container blogs__container">
+            <article class="blog">
+                <div class="blog__Image">
+                    <img src="./assets/images/blogimg/The Learner from Mistakes(RL).jpg">
+                </div>
+                <div class="blog__info">
+                    <h4>The Learner from Mistakes(RL)</h4>
+                    <p>Reinforcement learning (RL) is transitioning from a research field focused on game playing...</p>
+                    <a href="blogs.html" class="btn btn-primary">Explore</a>
+                </div>
+            </article>
+
+            <article class="blog">
+                <div class="blog__Image">
+                    <img src="./assets/images/blogimg/Imbalanced Class Proportions.jpg">
+                </div>
+                <div class="blog__info">
+                    <h4>Imbalanced Class Proportions</h4>
+                    <p>When observation in one class is higher than the observation in other classes then there...</p>
+                    <a href="blogs.html" class="btn btn-primary">Explore</a>
+                </div>
+            </article>
+
+            <article class="blog">
+                <div class="blog__Image">
+                    <img src="./assets/images/blogimg/The Story of Adversarial Images and Videos.png">
+                </div>
+                <div class="blog__info">
+                    <h4>The Story of Adversarial Images and Videos</h4>
+                    <p>Generative adversarial networks (GANs) have been the go-to state-of-the-art algorithm to...</p>
+                    <a href="blogs.html" class="btn btn-primary">Explore</a>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- END OF BLOGS -->
+
+    <!-- FAQ'S -->
+    <section class="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <div class="container faqs__container">
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-angle-down"></i></div>
+                <div class="question__answer">
+                    <h4>What is the primary focus of the club?</h4>
+                    <p>
+                        Our club focuses on exploring and implementing various
+                        AI technologies through projects and informative sessions.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-angle-down"></i></div>
+                <div class="question__answer">
+                    <h4>Are there any prerequisites for joining?</h4>
+                    <p>
+                        Students need to give their interview at the time of recruitment.
+                        If they missed the recruitment, their enthusiasm, willingness to learn,
+                        and regularity to our sessions will be considered.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-angle-down"></i></div>
+                <div class="question__answer">
+                    <h4>What kind of AI projects does the club undertake?</h4>
+                    <p>
+                        We engage in a diverse range of projects, including machine learning,
+                        natural language processing, computer vision, and more.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-angle-down"></i></div>
+                <div class="question__answer">
+                    <h4>How often does the club conduct sessions?</h4>
+                    <p>
+                        We organise regular sessions, typically weekly, covering
+                        topics like AI trends and hands-on practices.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-angle-down"></i></div>
+                <div class="question__answer">
+                    <h4>Can members propose and organize their own technical events within the club?</h4>
+                    <p>
+                        Yes, members can propose and organize their own technical events
+                        within the club by discussing with the club members forehand.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-angle-down"></i></div>
+                <div class="question__answer">
+                    <h4>How does the club engage with beginners in technology or those with limited experience?</h4>
+                    <p>
+                        The club fosters engagement with beginners through workshops, mentorship, and tailored learning
+                        resources.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-angle-down"></i></div>
+                <div class="question__answer">
+                    <h4>Are there opportunities for collaboration projects with other technical clubs?</h4>
+                    <p>
+                        Yes, we colloborate with other technical clubs for mutual growth and knowledge exchange.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-angle-down"></i></div>
+                <div class="question__answer">
+                    <h4>Is there a feedback mechanism for members to suggest improvements or share their experiences
+                        with the club?</h4>
+                    <p>
+                        Yes, we receive feedbacks after every session we believe that feedback
+                        mechanism allows members to suggest improvements and share their experiences with the club.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-angle-down"></i></div>
+                <div class="question__answer">
+                    <h4>How can members contribute to the clubs online presence, such as blogs or technical
+                        publications?</h4>
+                    <p>
+                        Members can contribute to the club's online presence by creating blogs or technical
+                        publications.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-angle-down"></i></div>
+                <div class="question__answer">
+                    <h4>How does the club adapt its programmes to cater to members with varying levels of technical
+                        proficiency?</h4>
+                    <p>
+                        The club adapts programs to cater to varying technical proficiency levels
+                        through tiered workshops and skill-building sessions.
+                    </p>
+                </div>
+            </article>
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-angle-down"></i></div>
+                <div class="question__answer">
+                    <h4>How does the club encourage diversity in terms of gender, background, and technical interests?
+                    </h4>
+                    <p>
+                        Diversity is encouraged through inclusive policies, outreach programmes, and events
+                        catering to a wide range of interests and backgrounds.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- END OF FAQ'S -->
+
+    <!-- <section class="container testimonials__container mySwiper">
+        <h2>Testimonials</h2>
+        <div class="swiper-wrapper">
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./assets/images/avatar5.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Canari</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                       Vitae consequatur, exercitationem, reiciendis assumenda 
+                       unde saepe illo natus hic ipsam iste quia harum officiis 
+                       recusandae deserunt pariatur ipsa at accusamus voluptas!</p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./assets/images/avatar5.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Canari</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                       Vitae consequatur, exercitationem, reiciendis assumenda 
+                       unde saepe illo natus hic ipsam iste quia harum officiis 
+                       recusandae deserunt pariatur ipsa at accusamus voluptas!</p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./assets/images/avatar5.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Canari</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                       Vitae consequatur, exercitationem, reiciendis assumenda 
+                       unde saepe illo natus hic ipsam iste quia harum officiis 
+                       recusandae deserunt pariatur ipsa at accusamus voluptas!</p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./assets/images/avatar5.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Canari</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                       Vitae consequatur, exercitationem, reiciendis assumenda 
+                       unde saepe illo natus hic ipsam iste quia harum officiis 
+                       recusandae deserunt pariatur ipsa at accusamus voluptas!</p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./assets/images/avatar5.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Canari</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                       Vitae consequatur, exercitationem, reiciendis assumenda 
+                       unde saepe illo natus hic ipsam iste quia harum officiis 
+                       recusandae deserunt pariatur ipsa at accusamus voluptas!</p>
+                </div>
+            </article>
+        </div>
+        <div class="swiper-pagination"></div>
+    </section> -->
+
+    <!-- END OF TESTIMONIALS -->
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer__container">
+            <div class="footer__1">
+                <a href="index.html">
+                    <h4>KOGNITIV</h4>
+                </a>
+                <p style="color: var(--color-success);">"To make computers to see, hear, and learn. Let us welcome the
+                    future computing."</p>
+                <p>Machine Learning is pervasive, predicting, adapting through iterative training.
+                    Our club emphasizes projects, product development, and collaborative idea-sharing for stress-free
+                    learning.
+                </p>
+            </div>
+
+            <div class="footer__2">
+                <h4>Links</h4>
+                <ul class="permalinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="befprojects.html">Projects</a></li>
+                    <li><a href="befcontact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__3">
+                <h4>Primacy</h4>
+                <ul class="privacy">
+                    <li><a href="undev.html">Privacy Policy</a></li>
+                    <li><a href="undev.html">Terms and Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>kognitiv.techclub@kluniversity.in</p>
+                </div>
+
+                <ul class="footer__socials">
+                    <li>
+                        <a href="https://www.facebook.com/kognitiv.club" target="_blank"><i
+                                class="uil uil-facebook-f"></i></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/kognitiv_club/" target="_blank"><i
+                                class="uil uil-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/kognitivclub" target="_blank"><i class="uil uil-twitter"></i></a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/company/kognitiv-club/mycompany/" target="_blank"><i
+                                class="uil uil-linkedin"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCYbMRONlhT1RCgswkbuGGzg" target="_blank"><i
+                                class="uil uil-youtube"></i></a></li>
+                    <li><a href="https://t.me/joinchat/1sxfSbNM1adhMzNl" target="_blank"><i
+                                class="uil uil-telegram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__copyrights">
+            <small>Copyright &copy; 2024 Kognitiv, All rights reserved. Powerded by Kognitiv Club.</small>
+        </div>
+    </footer>
+    <!-- END OF FOOTER -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/jquery-2.1.4.js"></script>
+    <script src="./assets/js/jquery.mobile.custom.min.js"></script>
+    <script src="./assets/js/snap.svg-min.js"></script>
+    <script src="./assets/js/slider.js"></script> <!-- Resource jQuery -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            mousewheel: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            //   when window width is >= 600px
+            breakpoints: {
+                600: {
+                    slidesPerView: 2
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./assets/images/logo-updated.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ICONSCOUT CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/befblog.css">
+    <title>Kognitiv Club</title>
+    <style>
+        body{ background-image: url(./assets/images/bg-texture.png); }
+
+        .blogs{
+            margin-top: 1rem;
+        }
+        .blog{
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- NAV -->
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html"><h4>KOGNITIV CLUB</h4></a>
+            <ul class="nav__menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="befprojects.html">Projects</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="alumni.html">Alumni</a></li>
+                <li><a href="befcontact.html">Contact Us</a></li>
+                <!-- <li><a href="signin.html">Sign In</a></li> -->
+            </ul>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+    <!-- END OF NAV -->
+
+    <div class="back-arrow" onclick="goBack()">
+        <i class="uil uil-arrow-left"></i>
+    </div>
+
+<!-- SEARCH BAR FOR BLOGS -->
+    <form action="" class="container search__bar-container">
+        <div>
+            <i class="uil uil-search"></i>
+            <input type="search" id="blogSearch" placeholder="Search" onkeyup="searchBlog()">
+        </div>
+        <!-- <button type="submit" class="btn1" onclick="searchBlogs()" >Search</button> -->
+    </form>
+
+<!-- BLOGS -->
+<section class="blogs">
+    <h2>Our Blogs</h2>
+    <div class="container blogs__container" id="blog__search">
+     <!--AI Poisoning-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/aipoisoning.png">
+        </div> 
+        <div class="blog__info">
+            <h4>AI Poisoning</h4>
+            <p>In the sprawling landscapes of artificial intelligence (AI) and machine learning (ML), where data reigns supreme, a silent saboteur... </p>
+            <a href="https://www.linkedin.com/pulse/ai-poisoning-kognitiv-club-2q5oc" class="btn btn-primary">Read More</a>
+        </div>
+    </article>
+    
+    <!--AI in Space-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/ai_space.jpg">
+        </div> 
+        <div class="blog__info">
+            <h4>AI in Space</h4>
+            <p>Artificial intelligence is the simulation of human intelligence processes by machines, especially computer systems. AI is used in ..</p>
+            <a href="https://www.linkedin.com/pulse/ai-space-kognitiv-club-c5wgc" class="btn btn-primary">Read More</a>
+        </div>
+    </article>
+    
+   <!--Web3 Incorporating the use of AI-->
+   <article class="blog">
+    <div class="blog__Image">
+        <img src="./assets/images/blogimg/web3.jpg">
+    </div> 
+    <div class="blog__info">
+        <h4>Web3 Incorporating the use of AI</h4>
+        <p>Ethereum co-founder Gavin Wood introduced the term “Web3” in 2014, and in 2021, it garnered attention from cryptocurrency enthusiasts, ...</p>
+        <a href="https://www.linkedin.com/pulse/web3-incorporating-use-ai-kognitiv-club-ian0c" class="btn btn-primary">Read More</a>
+    </div>
+    </article>
+
+
+   <!--Crime Forecasting using ML and CV-->
+   <article class="blog">
+    <div class="blog__Image">
+        <img src="./assets/images/blogimg/crime.png">
+    </div> 
+    <div class="blog__info">
+        <h4>Crime Forecasting using ML and CV</h4>
+        <p>Crime poses an intricate issue creating substantial hurdles, for communities worldwide and the law enforcement ... </p>
+        <a href="https://www.linkedin.com/pulse/crime-forecasting-using-ml-cv-kognitiv-club-zb8gc" class="btn btn-primary">Read More</a>
+    </div>
+    </article>
+
+   <!--Cognitive Science-->
+   <article class="blog">
+    <div class="blog__Image">
+        <img src="./assets/images/blogimg/cog.png">
+    </div> 
+    <div class="blog__info">
+        <h4>Cognitive Science</h4>
+        <p>Commence on a voyage of understanding the difficulties of the human brain, where the quest of awareness is an alluring excursion. </p>
+        <a href="https://www.linkedin.com/pulse/introduction-kognitiv-club-q9qhc" class="btn btn-primary">Read More</a>
+    </div>
+    </article>
+   
+   <!--AI and Art of Creativity-->
+   <article class="blog">
+    <div class="blog__Image">
+        <img src="./assets/images/blogimg/aiart.jpeg">
+    </div> 
+    <div class="blog__info">
+        <h4>AI and Art of Creativity</h4>
+        <p>The domains of art and creativity have conventionally been seen as inherently human pursuits and acting as channels for our sentiments..</p>
+        <a href="https://www.linkedin.com/pulse/ai-art-creativity-kognitiv-club-y0qec" class="btn btn-primary">Read More</a>
+    </div>
+    </article>
+
+    <!--AI and Wildlife conservation drones-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/aidrones.jpeg">
+        </div> 
+        <div class="blog__info">
+            <h4>AI and Wildlife Conservation Drones</h4>
+            <p>In the dynamic realm of wildlife conservation, a profound intersection with artificial intelligence (AI) is shaping a paradigm shift... </p>
+            <a href="https://www.linkedin.com/pulse/ai-wildlife-conservation-drones-kognitiv-club-b2tbc" class="btn btn-primary">Read More</a>
+        </div>
+    </article>
+    
+    <!--Autonmous Vehicles-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/autocars.jpg">
+        </div> 
+        <div class="blog__info">
+            <h4>Autonomous Vehicle</h4>
+            <p>Self-driving cars, or autonomous vehicles, promise to transform the way people move and transfer things.</p>
+            <a href="https://www.linkedin.com/pulse/autonomous-vehicles-kognitiv-club-om8ce" class="btn btn-primary">Read More</a>
+        </div>
+    </article>
+    
+    <!--Threats in Robotics-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/robothreats.jpg">
+        </div> 
+        <div class="blog__info">
+            <h4>Threats in Robotics</h4>
+            <p>Robotics is one of the field of Engineering where it deals with the design...</p>
+            <a href="https://www.linkedin.com/pulse/threats-robotics-kognitiv-club-khecc/" class="btn btn-primary" target="_blank">Read More</a>
+        </div>
+    </article>
+
+    <!--AI in Data Security-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/ai_datasec.png">
+        </div> 
+        <div class="blog__info">
+            <h4>AI in Data Security</h4>
+            <p>Artificial intelligence (AI) plays a crucial role in the dynamic field of cyber security...</p>
+            <a href="https://www.linkedin.com/pulse/ai-data-security-kognitiv-club-fbazc/" class="btn btn-primary" target="_blank">Read More</a>
+        </div>
+    </article>
+
+    <!--Enhancements of VR and AR using AI-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/vr_ar.jpeg">
+        </div> 
+        <div class="blog__info">
+            <h4>Enhancements of VR and AR using AI</h4>
+            <p>Have you ever wished to create a universe where your imagination...</p>
+            <a href="https://www.linkedin.com/pulse/enhancement-vr-ar-using-ai-kognitiv-club-vac4c/" class="btn btn-primary" target="_blank">Read More</a>
+        </div>
+    </article>
+
+    <!--Meta Learning-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/meta.jpg">
+        </div> 
+        <div class="blog__info">
+            <h4>Meta Learning</h4>
+            <p>Learning something new can feel like solving a giant puzzle. But what if I told you...</p>
+            <a href="https://www.linkedin.com/pulse/meta-learning-kognitiv-club-bw8ac/" class="btn btn-primary" target="_blank">Read More</a>
+        </div>
+    </article>
+
+    <!--Social Media Trend Analysis-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/social.jpg">
+        </div> 
+        <div class="blog__info">
+            <h4>Social Media Trend Analysis</h4>
+            <p>Now-a-days social media is getting a trending platform through which...</p>
+            <a href="https://www.linkedin.com/pulse/social-media-trend-analysis-kognitiv-club-hixnc/" class="btn btn-primary" target="_blank">Read More</a>
+        </div>
+    </article>
+
+    <!--Virtual Agents-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/virtualagents.png">
+        </div> 
+        <div class="blog__info">
+            <h4>Virtual Agents</h4>
+            <p>In modern dynamic business panorama, the integration of innovative technologies...</p>
+            <a href="https://www.linkedin.com/pulse/virtual-agents-kognitiv-club-dcucc/" class="btn btn-primary" target="_blank">Read More</a>
+        </div>
+    </article>
+
+    <!--Transfer Learning-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/transfer_learn.png">
+        </div> 
+        <div class="blog__info">
+            <h4>Transfer Learning</h4>
+            <p>One who knows to drive a car, can handle to drive a truck or bus due to similar controls like steering...</p>
+            <a href="https://www.linkedin.com/pulse/transfer-learning-kognitiv-club-2v8ec/" class="btn btn-primary" target="_blank">Read More</a>
+        </div>
+    </article>
+
+    <!--AI Optimized Hardware-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/ai_hardware.png">
+        </div> 
+        <div class="blog__info">
+            <h4>AI Optimized Hardware</h4>
+            <p>In the ever-evolving landscape of technology, a transformative force is at play – the magic of AI-Optimized...</p>
+            <a href="https://www.linkedin.com/pulse/ai-optimized-hardware-kognitiv-club-ynbtc/" class="btn btn-primary" target="_blank">Read More</a>
+        </div>
+    </article>
+
+    <!--Conversational AI-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/convai.png">
+        </div> 
+        <div class="blog__info">
+            <h4>Conversational AI</h4>
+            <p>You would possibly heard approximately it, but do you surely understand how it is reshaping the...</p>
+            <a href="https://www.linkedin.com/pulse/conversational-ai-kognitiv-club-wue8c/" class="btn btn-primary" target="_blank">Read More</a>
+        </div>
+    </article>
+
+
+    <!--Disease Outbreak Prediction-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/disease.jpg">
+        </div> 
+        <div class="blog__info">
+            <h4>Disease Outbreak Prediction</h4>
+            <p>Disease Outbreak is nothing but spreading the infections, which are very harmful to the humans...</p>
+            <a href="https://www.linkedin.com/pulse/disease-outbreak-prediction-kognitiv-club-tkroe" class="btn btn-primary" target="_blank">Read More</a>
+        </div>
+    </article>
+
+    <!--Machine Learning in 6G-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/6gai.jpeg">
+        </div> 
+        <div class="blog__info">
+        <h4>Machine Learning in 6G Wireless Technology</h4>
+        <p>Imagine your phone not only being fast and reliable but also super smart such that...</p>
+                    <a href="https://www.linkedin.com/pulse/machine-learning-era-6g-wireless-technology-kognitiv-club-upy6f" class="btn btn-primary" target="_blank">Read More</a>
+            </div>
+    </article>
+
+    <!--Quantum Computing in AI-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/quant.jpeg">
+        </div> 
+        <div class="blog__info">
+            <h4>Quantum Computing in AI</h4>
+            <p>Quantum computers can handle a large number of possibilities at once. This has the potential to speed up AI algorithms and...</p>
+            <a href="https://www.linkedin.com/pulse/quantum-computing-ai-kognitiv-club-nyqfc" class="btn btn-primary" target="_blank">Read More</a>
+            </div>
+    </article>
+
+    <!--Sentiment Analysis-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/senti.jpeg">
+        </div> 
+        <div class="blog__info">
+            <h4>Sentiment Analysis</h4>
+            <p>Sentiment analysis is a Natural Language Processing (NLP) technique used to determine whether data is positive, negative or neutral...</p>
+            <a href="https://www.linkedin.com/pulse/sentiment-analysis-kognitiv-club-qoyoc" class="btn btn-primary" target="_blank">Read More</a>
+        </div>
+    </article>
+
+    <!--AI Advancements and Applications-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/aiadv.jpeg">
+        </div> 
+        <div class="blog__info">
+           <h4>AI Advancements and Applications</h4>
+           <p>Advancements in AI had a great impact on various aspects of our lives. Everyone says...</p>
+           <a href="https://www.linkedin.com/pulse/ai-advancements-applications-kognitiv-club-4mlpc" class="btn btn-primary" target="_blank">Read More</a>
+        </div>
+    </article>
+
+    <!--Object Detection using YOLO-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/objyolo.jpeg">
+        </div> 
+        <div class="blog__info">
+        <h4>Object Detection using YOLO</h4>
+        <p>We humans have the ability to look at objects and distinguish them using one of sensory organ eye...</p>
+                    <a href="https://www.linkedin.com/pulse/object-detection-using-yolo-kognitiv-club-vbsqc" class="btn btn-primary" target="_blank">Read More</a>
+            </div>
+    </article>
+
+    <!--Iris Classification-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/iris.jpeg">
+        </div> 
+        <div class="blog__info">
+        <h4>Iris Classification</h4>
+        <p>Iris Flower Classification is a notable problem in the field of machine...</p>
+                    <a href="https://www.linkedin.com/pulse/iris-classification-kognitiv-club-57i7c" class="btn btn-primary" target="_blank">Read More</a>
+            </div>
+    </article>
+
+    <!--Strategies for Text Classification-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/text.png">
+        </div> 
+        <div class="blog__info">
+        <h4>Startegies for Text Classification</h4>
+        <p>Text classification is one of the machine learning technique that will allocate...</p>
+                    <a href="https://www.linkedin.com/pulse/strategies-text-classification-kognitiv-club" class="btn btn-primary" target="_blank">Read More</a>
+            </div>
+    </article>
+
+    <!--Sales Forecasting using AI-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/sfai.jpeg">
+        </div> 
+        <div class="blog__info">
+        <h4>Sales Forecasting Using AI</h4>
+        <p>AI sales forecasting is a method that uses artificial intelligence tools to...</p>
+                    <a href="https://www.linkedin.com/pulse/sales-forecasting-using-ai-kognitiv-club" class="btn btn-primary" target="_blank">Read More</a>
+            </div>
+    </article>
+
+    <!--Human Activity Recognition-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/har.png">
+        </div> 
+        <div class="blog__info">
+        <h4>Human Activity Recognition</h4>
+        <p>Nowadays smartphones are able to acquire, store, share, and elaborate huge amount of data in a very short time...</p>
+                    <a href="https://www.linkedin.com/pulse/human-activity-recognition-kognitiv-club" class="btn btn-primary" target="_blank">Read More</a>
+            </div>
+    </article>
+
+    <!--Speech Emotion Recognition-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/speech.png">
+        </div> 
+        <div class="blog__info">
+        <h4>Speech Emotion Recognition</h4>
+        <p>We can usually tell how someone is feeling by their facial expressions and words. But how does a machine understand...</p>
+                    <a href="https://www.linkedin.com/pulse/speech-emotion-recognition-kognitiv-club" class="btn btn-primary" target="_blank">Read More</a>
+            </div>
+    </article>
+
+    <!--Movie Recommender System-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/movrec.jpeg">
+        </div> 
+        <div class="blog__info">
+        <h4>Movie Recommeder System</h4>
+        <p>We've all experienced that feeling of scrolling trying to decide which movie to watch next. That's when Support Vector Machines (SVMs) step in...</p>
+                    <a href="https://www.linkedin.com/pulse/movie-recommender-system-kognitiv-club-1c" class="btn btn-primary" target="_blank">Read More</a>
+            </div>
+    </article>
+
+    <!--BigMartSales-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/bigmart.jpeg">
+        </div> 
+        <div class="blog__info">
+        <h4>BigMart Sales Prediction</h4>
+        <p>In the ever-evolving world companies often compete with each other to gain market dominance, and that includes big supermarket chains as well...</p>
+                    <a href="https://www.linkedin.com/pulse/bigmart-sales-prediction-kognitiv-club" class="btn btn-primary" target="_blank">Read More</a>
+            </div>
+    </article>
+
+    <!--House Price Prediction-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/houseprice.jpeg">
+        </div> 
+        <div class="blog__info">
+        <h4>House Price Prediction</h4>
+        <p>Home value predication model is also called as House  price index(HPI) is used to measure price changes of residential housing in many countries...</p>
+                    <a href="https://www.linkedin.com/pulse/house-price-prediction-kognitiv-club" class="btn btn-primary" target="_blank">Read More</a>
+            </div>
+    </article>
+
+    <!--AI in Business-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/aibussin.jpeg">
+        </div> 
+        <div class="blog__info">
+        <h4>The AI Revolution in Business</h4>
+        <p>In recent years, artificial intelligence (AI) has emerged as a transformative force in the business environment. Its ability...</p>
+                    <a href="https://www.linkedin.com/pulse/ai-revolution-business-kognitiv-club" class="btn btn-primary" target="_blank">Read More</a>
+            </div>
+    </article>
+
+    <!--Robotics in Industries-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/Roboindus.jpeg">
+        </div> 
+        <div class="blog__info">
+        <h4>The Rise of Intelligent Automation</h4>
+        <p>Have you noticed how artificial intelligence and robotics seem to be popping up everywhere in recent...</p>
+                    <a href="https://www.linkedin.com/pulse/rise-intelligent-automation-how-ai-robotics-transforming" class="btn btn-primary" target="_blank">Read More</a>
+            </div>
+    </article>
+
+    <!--Gaming with AI-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/gameAI.jpeg">
+        </div> 
+        <div class="blog__info">
+        <h4>Gaming with AI</h4>
+        <p>Most of the people who spends lot of time on Internet are fond of video games. It is estimated that by the end of 2023 there gonna be 3.26 billion ...</p>
+                    <a href="https://www.linkedin.com/pulse/gaming-ai-kognitiv-club" class="btn btn-primary" target="_blank">Read More</a>
+            </div>
+    </article>
+
+    <!--OpenCV-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/cv.jpeg">
+        </div> 
+        <div class="blog__info">
+        <h4>OpenCV</h4>
+        <p>In our tech-driven world, something truly magical is happening. From autonomous vehicles navigating complex routes to Face Recognition...</p>
+                    <a href="https://www.linkedin.com/pulse/opencv-kognitiv-club" class="btn btn-primary" target="_blank">Read More</a>
+            </div>
+    </article>
+
+    <!--Recommendation System-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/recomsys.jpeg">
+        </div> 
+        <div class="blog__info">
+        <h4>Recommendation Systems</h4>
+        <p>In today’s era we are bombarded with an amount of information and choices when it comes to selecting movies, books or products. The options seem endless...</p>
+                    <a href="https://www.linkedin.com/pulse/recommendation-systems-kognitiv-club" class="btn btn-primary" target="_blank">Read More</a>
+            </div>
+    </article>
+
+    <!--Prompt Engineering-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/prompt.png">
+        </div> 
+        <div class="blog__info">
+        <h4>Prompt Engineering</h4>
+        <p> Prompt Engineering is a game changer, it is used by everyone, they get solutions, they get content, they get what they want. Majorly prompt engineering is ..</p>
+                    <a href="https://www.linkedin.com/pulse/prompt-engineering-kognitiv-club" class="btn btn-primary" target="_blank">Read More</a>
+            </div>
+    </article>
+    
+    <!--Journey into World of AI-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/journeyAI.jpeg">
+        </div> 
+        <div class="blog__info">
+        <h4>Journey into the World of AI</h4>
+        <p>Do you still confuse about AI? You want to know how the AI functions? Today this article will give a best way to apprehend it.Artificial Intelligence is ...</p>
+                    <a href="https://www.linkedin.com/pulse/journey-world-ai-kognitiv-club" class="btn btn-primary" target="_blank">Read More</a>
+            </div>
+    </article>
+
+    <!--Deep Learning-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/dl.png">
+        </div> 
+        <div class="blog__info">
+        <h4>What is Deep Learning?</h4>
+        <p>Deep learning is a subset of machine learning based on neural networks. It has been popular these days because it helps in understanding a large amount of ...</p>
+                    <a href="https://www.linkedin.com/pulse/what-deep-learning-kognitiv-club" class="btn btn-primary" target="_blank">Read More</a>
+            </div>
+    </article>
+ 
+    <!--NLP-->  
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/nlp.png">
+        </div> 
+        <div class="blog__info">
+        <h4>Exploring AI's Mastery of Language</h4>
+        <p>NLP, a branch of AI focuses on empowering machines to comprehend and generate language. In this article we dive deeply into NLP delving into its progression...</p>
+                    <a href="https://www.linkedin.com/pulse/exploring-ais-mastery-language-kognitiv-club/" class="btn btn-primary" target="_blank">Read More</a>
+            </div>
+    </article>
+    
+    <!--AI for Education-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/Aifored.jpeg">
+        </div> 
+        <div class="blog__info">
+        <h4>Artificial Intelligence for Education</h4>
+        <p> This article includes the overview of how Artificial Intelligence and education are bonded . AI in Education has the potential to alter both teachers and...</p>
+                    <a href="https://www.linkedin.com/pulse/artificial-intelligence-education-kognitiv-club" class="btn btn-primary" target="_blank">Read More</a>
+            </div>
+    </article>
+
+    <!-- Clustering and K-Means Clustering -->
+    <article class="blog">
+    <div class="blog__Image">
+         <img src="./assets/images/blogimg/clustvskmeans.jpg">
+    </div> 
+    <div class="blog__info">
+        <h4>Clustering and K-Means Clustering</h4>
+        <p>A way of grouping the data points into different clusters, consisting of similar data points. The objects with the possible similarities remain in ... </p>
+        <a href="https://www.linkedin.com/pulse/clustering-k-means-kodi-jahnavi/?trackingId=2xLVPY7WQcSo%2BFiodNfL3w%3D%3D" class="btn btn-primary" target="_blank">Read More</a>
+    </div>
+    </article>   
+
+    <!-- Confusion Matrix and Performance Metrics -->
+    <article class="blog">
+    <div class="blog__Image">
+        <img src="./assets/images/blogimg/cmandpm.jpg">
+    </div> 
+    <div class="blog__info">
+        <h4>Confusion Matrix and Performance Metrics</h4>
+        <p>In the field of AI and explicitly the issue of factual order, a disarray grid, otherwise called a blunder matrix, is a particular table design that ...</p>
+        <a href="https://www.linkedin.com/pulse/confusion-matrix-performance-metrics-phani-melam/?trackingId=pFgkeMNsST6GREvtLkLEzQ%3D%3D" class="btn btn-primary" target="_blank">Read More</a>
+    </div>
+    </article> 
+
+    <!-- A Simple Guide For Novices To Bivariate Analysis In 2022 -->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/bivariate.jpg">
+        </div> 
+        <div class="blog__info">
+            <h4>A Simple Guide For Novices To Bivariate Analysis In 2022</h4>
+            <p>The term "bivariate analysis" refers to the study of bivariate data. To determine the link between two value sets, a single statistical analysis was utilised...</p>
+            <a href="https://www.linkedin.com/pulse/simple-guide-novices-bivariate-analysis-2022-shiva-chary/" class="btn btn-primary" target="_blank">Read More</a>
+        </div>
+    </article> 
+    
+    <!-- Regression vs. Classification Will ML -->
+    <article class="blog">
+    <div class="blog__Image">
+       <img src="./assets/images/blogimg/regvsclas.jpg">
+    </div> 
+    <div class="blog__info">
+        <h4>Regression vs Classification</h4>
+        <p>Even the most experienced data scientists might occasionally become perplexed when comparing regression and classification in machine learning. They may eventually ...</p>
+        <a href="https://www.linkedin.com/pulse/regression-vs-classification-machine-learning-define-sathwikanjali/" class="btn btn-primary" target="_blank">Read More</a>
+    </div>
+    </article>
+ 
+    <!-- Visualization fundamentals & Process of Visualization -->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/datavis.jpg">
+        </div> 
+        <div class="blog__info">
+            <h4>Visualization fundamentals & Process of Visualization</h4>
+            <p>It is the representation of data through use of common graphics, such as charts, plots, infographics, and even animations. These visual displays of information....</p>
+            <a href="https://www.linkedin.com/pulse/visualization-fundamentals-process-vyshnavi-lalitha-seshagiri/" class="btn btn-primary" target="_blank">Read More</a>
+        </div>
+    </article> 
+
+    <!-- A lovely piece of logical art in the form of an artificial neural network. -->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/ann.jpg">
+        </div> 
+        <div class="blog__info">
+            <h4>A lovely piece of logical art in the form of an artificial neural network.</h4>
+            <p>Artificial neural networks (ANNs) have recently become a popular and useful model for classification, clustering, pattern recognition, and prediction in a variety of areas...</p>
+            <a href="https://www.linkedin.com/pulse/lovely-piece-logical-art-form-artificial-neural-kumar-renduchinthala/" class="btn btn-primary" target="_blank">Read More</a>
+        </div>
+    </article>  
+
+    <!-- Imbalanced Class Proportions -->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/Imbalanced Class Proportions.jpg">
+        </div> 
+        <div class="blog__info">
+            <h4>Imbalanced Class Proportions:</h4>
+            <p>Did you ever wonder how to classify the data having inequal proportions of target labels?.. If yes, then you are in the right place..</p>
+            <a href="https://www.linkedin.com/pulse/imbalanced-class-proportions-kognitiv-club" class="btn btn-primary" target="_blank">Read More</a>
+        </div>
+    </article> 
+
+    <!-- The Learner from Mistakes(RL) -->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/The Learner from Mistakes(RL).jpg">
+         </div> 
+        <div class="blog__info">
+            <h4>The Learner from Mistakes(RL):</h4>
+            <p>Reinforcement learning (RL) is transitioning from a research field focused on game playing to a technology with real-world applications.</p>
+            <a href="https://www.linkedin.com/pulse/learner-from-mistakesrl-kognitiv-club" class="btn btn-primary" target="_blank">Read More</a>
+        </div>
+    </article> 
+
+    <!-- The Story of Adversarial Images and Videos -->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/The Story of Adversarial Images and Videos.png">
+        </div> 
+        <div class="blog__info">
+            <h4>The Story of Adversarial Images and Videos:</h4>
+            <p>Generative adversarial networks (GANs) have been the go-to state-of-the-art algorithm to image and video generation...</p>
+                <a href="https://www.linkedin.com/pulse/story-adversarial-images-videos-kognitiv-club" class="btn btn-primary" target="_blank">Read More</a>
+        </div>
+    </article>  
+    
+    <!--AI vs ML vs Dl, Types of Activation Function -->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/almldl.jpg">
+        </div> 
+        <div class="blog__info">
+            <h4>AI vs ML vs Dl, Types of Activation Function</h4>
+            <p>AI is an umbrella that covers everything related to making machines smarter. There are many formal definitions for AI...</p>
+            <a href="https://www.linkedin.com/pulse/ai-vs-ml-dl-types-activation-function-prasanna-swetha-udimudi/" class="btn btn-primary" target="_blank">Read More</a>
+        </div>
+    </article> 
+    
+    <!--Long Short-Term Memory Networks -->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/lstm.jpg">
+        </div> 
+        <div class="blog__info">
+            <h4>Long Short-Term Memory Networks</h4>
+            <p>Sequence prediction problems have been around for a long time...</p>
+            <a href="https://www.linkedin.com/pulse/long-short-term-memory-networks-vamsi-mitra-g/" class="btn btn-primary" target="_blank">Read More</a>
+        </div>
+    </article>
+
+    <!--YOLO Algorithm -->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/yoloalgo.jpg">
+        </div> 
+        <div class="blog__info">
+            <h4>YOLO Algorithm</h4>
+            <p>Object detection is a phenomenon in Computer vision that involves the detection of various objects in digital images or videos...</p>
+            <a href="https://www.linkedin.com/pulse/yolo-algorithm-prasanna-swetha-udimudi/" class="btn btn-primary" target="_blank">Read More</a>
+        </div>
+    </article> 
+
+    <!--Self-organizing maps -->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/som.png">
+        </div> 
+        <div class="blog__info">
+            <h4>Self-organizing maps</h4>
+            <p>A self-organizing map (SOM) or self-organizing feature map (SOFM) is an unsupervised machine learning technique used to produce...</p>
+    <a href="https://www.linkedin.com/pulse/self-organizing-maps-srinivas-voore/" class="btn btn-primary" target="_blank">Read More</a>
+        </div>
+    </article>
+
+    <!-- Convolutional Neural Networks (CNN) -->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/cnn.png">
+        </div> 
+        <div class="blog__info">
+            <h4>Convolutional Neural Networks (CNN)</h4>
+            <p>Because of its ability to handle vast volumes of data, Deep Learning has proven to be a very useful technology over the last few decades...</p>
+            <a href="https://www.linkedin.com/pulse/convolutional-neural-networks-cnn-pavan-sai-gontina/" class="btn btn-primary" target="_blank">Read More</a>
+        </div>
+    </article> 
+
+    <!--Deep Q-Learning -->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/Deep Q-Learning.png">
+        </div> 
+        <div class="blog__info">
+            <h4>Deep Q-Learning</h4>
+            <p>Reinforcement is a part of machine learning concerned about the action, which an agent in an environment takes to maximize the rewards...</p>
+            <a href="https://www.linkedin.com/pulse/deep-q-learning-jithendra-katta/" class="btn btn-primary" target="_blank">Read More</a>
+        </div>
+    </article>
+
+    <!-- PySpark: Apache Spark in Pythonic Way!! -->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/pyspark.jpg">
+        </div> 
+        <div class="blog__info">
+            <h4>PySpark: Apache Spark in Pythonic Way!!</h4>
+            <p>Apache Spark is an open-source, distributed processing system used for handling the works which uses large scale of data...</p>
+            <a href="https://www.linkedin.com/pulse/pyspark-apache-spark-pythonic-way-dheeraj-satyavarapu/" class="btn btn-primary" target="_blank">Read More</a>
+        </div>
+    </article> 
+
+    <!--Regression VS Classification -->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/regvsclas1.png">
+        </div> 
+        <div class="blog__info">
+            <h4>Regression VS Classification</h4>
+            <p>The main difference between Regression and Classification algorithms that Regression algorithms are used to predict the continuous..</p>
+            <a href="https://www.linkedin.com/pulse/regression-vs-classification-udbhav-govindu/" class="btn btn-primary" target="_blank">Read More</a>
+        </div>
+    </article> 
+
+    <!--Big Data in Health Care Industry -->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/healthcarebd.jpg">
+        </div> 
+        <div class="blog__info">
+            <h4>Big Data in Health Care Industry</h4>
+            <p>The new era is driven by big data. Today, we are bombarded with massive amounts of data from every part of our lives, including health...</p>
+            <a href="https://www.linkedin.com/pulse/big-data-health-care-industry-dwarampudi-vijaya-sree-sai-reddy/" class="btn btn-primary" target="_blank">Read More</a>
+        </div>
+    </article>  
+
+    <!--DBSCAN Algorithm -->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/dbscanalgo.jpg">
+        </div> 
+        <div class="blog__info">
+            <h4>DBSCAN Algorithm</h4>
+            <p>DBSCAN is a type of clustering algorithm. In clustering, a group of different data objects is classified as similar objects...</p>
+            <a href="https://www.linkedin.com/pulse/dbscan-algorithm-udbhav-govindu/" class="btn btn-primary" target="_blank">Read More</a>
+        </div>
+    </article> 
+
+    <!--Decision Tree -->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/dt.jpg">
+        </div> 
+        <div class="blog__info">
+            <h4>Decision Tree</h4>
+            <p>Decision Tree is used to build classification and regression models. It is used to create data models that will predict class labels or values for the decision-making process...</p>
+            <a href="https://www.linkedin.com/pulse/decision-tree-dwarampudi-vijaya-sree-sai-reddy/" class="btn btn-primary" target="_blank">Read More</a>
+        </div>
+    </article> 
+
+    <!--Upper Confidence Bound -->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/ucb.png">
+        </div> 
+        <div class="blog__info">
+            <h4>Upper Confidence Bound </h4>
+            <p>This is a famous game in which there will be many multi armed bandit machines. You have to select a machine and have to pull the arm...</p>
+            <a href="https://www.linkedin.com/pulse/upper-confidence-bound-jithendra-katta/" class="btn btn-primary" target="_blank">Read More</a>
+        </div>
+    </article>  
+
+    <!--Types of Datapreprocessing--> 
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/brain.jpg">
+        </div> 
+        <div class="blog__info">
+            <h4>Types of Data Preprocessing and its importance:</h4>
+            <p>There is a huge amount of data in various forms like tables, images, audio files, images etc But Machine..</p>
+            <a href="https://www.linkedin.com/pulse/types-data-pre-processing-importance-machine-learning-reddy" class="btn btn-primary" target="_blank">Read More</a>
+        </div>
+    </article>  
+
+    <!--Metrics to Evaluate for ML-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img src="./assets/images/blogimg/cf.png">
+        </div> 
+        <div class="blog__info">
+            <h4>Metrics to Evaluate For Machine Learning Algorithms ( Part-1 ):</h4>
+            <p> Metrics are demonstrated for both classsification and regression type machine learning problems...</p>          
+            <a href="https://kowshikbasha2.blogspot.com/2020/04/metrics-to-evaluate-for-machine.html" class="btn btn-primary" target="_blank">Read More</a>
+        </div>
+    </article>
+    
+    <!--Overfitting and Underfitting-->
+    <article class="blog">
+        <div class="blog__Image">
+            <img height="200px" src="./assets/images/blogimg/errorrates.png">
+        </div> 
+        <div class="blog__info">
+            <h4>Overfitting and Underfitting:</h4>
+            </p>Overfitting happens when a model learns the detail and noise in the training data...</p>
+            <a href="https://kowshikbasha.blogspot.com/2020/04/overfitting-and-underfitting.html" class="btn btn-primary" target="_blank">Read More</a>
+        </div>
+    </article> 
+    </div>
+
+    <!-- PAGINATION -->
+    <!-- Pagination -->
+    <div class="pagination-container">
+        <button id="prevPageBtn" onclick=window.scrollTo(0,0)><i class="uil uil-angle-double-left"></i></button>
+        <div class="pagination-buttons" onclick=window.scrollTo(0,0)></div>
+        <button id="nextPageBtn" onclick=window.scrollTo(0,0)><i class="uil uil-angle-double-right"></i></button>
+    </div>
+</section>
+<!-- END OF BLOGS -->
+
+<!-- FOOTER -->
+<footer>
+    <div class="container footer__container">
+        <div class="footer__1">
+            <a href="index.html"><h4>KOGNITIV</h4></a>
+            <p style="color: var(--color-success);">"To make computers to see, hear, and learn. Let us welcome the future computing."</p>
+            <p>Machine Learning is pervasive, predicting, adapting through iterative training. 
+               Our club emphasizes projects, product development, and collaborative idea-sharing for stress-free learning.
+            </p>
+        </div>
+
+        <div class="footer__2">
+            <h4>Links</h4>
+            <ul class="permalinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="befprojects.html">Projects</a></li>
+                <li><a href="befcontact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__3">
+            <h4>Primacy</h4>
+            <ul class="privacy">
+                <li><a href="undev.html">Privacy Policy</a></li>
+                <li><a href="undev.html">Terms and Conditions</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__4">
+            <h4>Contact Us</h4>
+            <div>
+                <p>kognitiv.techclub@kluniversity.in</p>
+            </div>
+
+            <ul class="footer__socials">
+                <li>
+                    <a href="https://www.facebook.com/kognitiv.club" target="_blank"><i class="uil uil-facebook-f"></i></a>
+                </li>
+                <li><a href="https://www.instagram.com/kognitiv_club/" target="_blank"><i class="uil uil-instagram"></i></a></li>
+                <li><a href="https://twitter.com/kognitivclub" target="_blank"><i class="uil uil-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/kognitiv-club/mycompany/" target="_blank"><i class="uil uil-linkedin"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCYbMRONlhT1RCgswkbuGGzg" target="_blank"><i class="uil uil-youtube"></i></a></li>
+                <li><a href="https://t.me/joinchat/1sxfSbNM1adhMzNl" target="_blank"><i class="uil uil-telegram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer__copyrights">
+        <small>Copyright &copy; 2024 Kognitiv, All rights reserved. Powerded by Kognitiv Club.</small>
+    </div>
+</footer>
+<!-- END OF FOOTER -->
+<script src="./assets/js/main.js"></script>
+<!-- Pagination Script -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const blogsContainer = document.querySelector('.blogs__container');
+        const blogs = document.querySelectorAll('.blog');
+        const blogsPerPage = 9;
+        let currentPage = 1;
+
+        function showPage(page) {
+            const startIndex = (page - 1) * blogsPerPage;
+            const endIndex = startIndex + blogsPerPage;
+
+            blogs.forEach((blog, index) => {
+                if (index >= startIndex && index < endIndex) {
+                    blog.style.display = 'block';
+                } else {
+                    blog.style.display = 'none';
+                }
+            });
+        }
+
+        function updatePaginationButtons() {
+            const totalPages = Math.ceil(blogs.length / blogsPerPage);
+
+            const paginationButtons = document.querySelector('.pagination-buttons');
+            if (paginationButtons) {
+                paginationButtons.innerHTML = '';
+
+                for (let i = 1; i <= totalPages; i++) {
+                    const button = document.createElement('button');
+                    button.textContent = i;
+                    button.addEventListener('click', function () {
+                        currentPage = i;
+                        showPage(currentPage);
+                        updatePaginationButtons();
+                    });
+                    if (i === currentPage) {
+                        button.classList.add('active');
+                    }
+                    paginationButtons.appendChild(button);
+                }
+            }
+        }
+
+        function setupPagination() {
+            const totalPages = Math.ceil(blogs.length / blogsPerPage);
+
+            const paginationContainer = document.querySelector('.pagination-buttons');
+
+            for (let i = 1; i <= totalPages; i++) {
+                const button = document.createElement('button');
+                button.textContent = i;
+                button.addEventListener('click', function () {
+                    currentPage = i;
+                    showPage(currentPage);
+                    updatePaginationButtons();
+                });
+                if (i === currentPage) {
+                    button.classList.add('active');
+                }
+                paginationContainer.appendChild(button);
+            }
+
+            const prevPageBtn = document.getElementById('prevPageBtn');
+            const nextPageBtn = document.getElementById('nextPageBtn');
+
+            prevPageBtn.addEventListener('click', function () {
+                if (currentPage > 1) {
+                    currentPage--;
+                    showPage(currentPage);
+                    updatePaginationButtons();
+                }
+            });
+
+            nextPageBtn.addEventListener('click', function () {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    showPage(currentPage);
+                    updatePaginationButtons();
+                }
+            });
+        }
+
+        setupPagination();
+        showPage(currentPage);
+    });
+</script>
+
+
+</body>
+</html>
