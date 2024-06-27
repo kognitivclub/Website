@@ -546,6 +546,10 @@ footer ul li a:hover{
     margin-top: 2rem;
 }
 
+.footer__socials a i{
+    text-decoration: none;
+}
+
 .footer__copyrights{
     text-align: center;
     margin-top: 4rem;
