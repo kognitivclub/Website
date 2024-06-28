@@ -1,6 +1,6 @@
 const data = [
     {
-        img: "./assets/images/y19/pavansai.jpg",
+        img: "./assets/images/y19/pavan_gontina.jpeg",
         name: "Pavansai Gontina",
         role: "Student",
         title: "TensorFlow Developer",
